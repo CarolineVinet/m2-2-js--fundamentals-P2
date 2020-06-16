@@ -4,6 +4,13 @@
 
 // Also, wouldn't it be nice if there were a Math method that could simplify the code....
 // https://www.w3schools.com/jsreF/jsref_obj_math.asp
+function max (num1, num2) {
+    return Math.max (num1, num2) 
+    }
+
+console.log (max (2, 3 ))
+
+
 
 // Q3.2
 // Without changing the function at all,
