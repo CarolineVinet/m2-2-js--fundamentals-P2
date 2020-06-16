@@ -8,8 +8,25 @@
 // Otherwise ignore them completely.
 // For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
 
+/*
+-goes through array and looks for length of items (>4)
+-items that meet requirement get placed in new var
+-items in new var get greeting added
+-new variable + greetings is returned
+*/
+
+
 function greetLong(lst) {
-  // lst is an array of strings
+  const newSet = lst.filter(function(item) {
+    return item.length >= 4;
+  })
+
+  const brandNewArray = newSet.map(function(newItem){
+  return "Hello " + newItem;
+  })
+
+  return brandNewArray;
 }
+
 // -------------------------------------------------------------------------
-console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log(greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
